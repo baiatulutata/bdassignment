@@ -1,7 +1,7 @@
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
 navLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
+    link.addEventListener('click', function (event) {
         event.preventDefault(); // Prevent default link behavior
 
 
@@ -11,7 +11,7 @@ navLinks.forEach(link => {
         make_all_links_inactive();
         this.classList.add('active');
         if (pageParam) {
-            switch (pageParam){
+            switch (pageParam) {
                 case "credits":
                     alert("show buy credits window")
                     break;
@@ -23,14 +23,14 @@ navLinks.forEach(link => {
             }
 
 
-
         }
 
         // If you still want to navigate to the link (after processing):
         //
     });
 });
-function make_all_links_inactive(){
+
+function make_all_links_inactive() {
     navLinks.forEach(link => {
         link.classList.remove('active');
 

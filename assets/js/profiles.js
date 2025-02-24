@@ -67,7 +67,7 @@ function getProfiles(favData) {
                     if (lastMosacicProfileElement) {
                         mosaic_container.appendChild(lastMosacicProfileElement);
                     }
-                    lastMosacicProfileElement=mosaicProfileElement.cloneNode(true);
+                    lastMosacicProfileElement = mosaicProfileElement.cloneNode(true);
 
                 });
 
